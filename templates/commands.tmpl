@@ -244,7 +244,7 @@ func {{ $api }}Register(subcommand bool) {
 					},
 				{{- end }}
 				Short: "{{ .Short }}",
-				Long: cli.Markdown("{{ .Long }}"),
+				Long: cli.Markdown(`{{ .Long }}`),
 				{{- if .Hidden }}
 					Hidden: {{ .Hidden }},
 				{{- end }}
